@@ -59,7 +59,7 @@ function M.hasEvery(...)
     local substrings = { ... }
     return function(str)
         for _, substring in ipairs(substrings) do
-            if ~string.find(str, substring, 1, true) then return false end
+            if not string.find(str, substring, 1, true) then return false end
         end
 		return true
     end
