@@ -1,5 +1,5 @@
-local json = require('lib.json')
-local bfr = require("lib.bfr")
+local json = require("garage.sessions.json")
+local bfr = require("garage.sessions.bfr")
 
 local M = {}
 

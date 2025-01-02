@@ -3,8 +3,6 @@ local M = {}
 local Popup = require("nui.popup")
 local event = require("nui.utils.autocmd").event
 
-
-
 M.config = {
 	maps = {
 		open = {}, -- keymap(s) to open file
@@ -69,7 +67,6 @@ function all(buf, rhs, arr, bufnr)
 		end
 	end
 end
-
 
 function M.write_binds(this, bufnr)
 	bufnr = bufnr or 0

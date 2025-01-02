@@ -1,1 +1,0 @@
-# garage.nvim/gitten

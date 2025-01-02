@@ -14,7 +14,8 @@ function M.recheck()
 end
 
 function M.register(pat, func)
-	if not pat or type(func) ~= "function" then error("fthook function must be a function") end
+	if not pat or not func then error("must provide a pattern and function when registering fthook") end
+	if type(func) ~= "function" then error("fthook function must be a function") end
 	M.hooks[pat] = M.hooks[pat] or {}
 	table.insert(M.hooks[pat], func)
 end
