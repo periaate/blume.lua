@@ -45,9 +45,6 @@ function key.sub(from, to)
 	return key.esc .. "v" .. key.cmd .. [[s/\v]] .. from .. "/" .. to .. "/g" .. "<cr>tt<end>"
 end
 
-return abbrev
-
-
 function key.set(mode, lhs, rhs, options)
 	vim.keymap.set(mode, lhs, rhs, options or key.opts)
 end
