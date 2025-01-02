@@ -1,6 +1,6 @@
 local bfr = {}
 
-local blume = require("blume")
+local blume = require("garage.blume")
 
 function bfr.is_valid(bufnr)
 	bufnr = bufnr or 0
