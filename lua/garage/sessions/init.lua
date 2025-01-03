@@ -55,7 +55,7 @@ function M.change_session(path)
 	vim.cmd([[1TermExec cmd="cd ]] .. path .. [[" open=0]])
 	if M.exists(path) then
 		M.load_session()
-		require("lib.fthooks").recheck()
+		require("garage.fthooks").recheck()
 	else
 		require("oil").open()
 	end
